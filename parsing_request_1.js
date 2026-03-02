@@ -38,7 +38,7 @@ const server = http.createServer((req,res)=>{
             const fullbody = Buffer.concat(body).toString();
             console.log(fullbody);
 
-            const params = new URLSearchParams(fullbody);
+            const params = new URLSearchParams(fullbody); // ye line sbko alag alag krke ek object me store krdega. jaise username:neetes, email:dixitneetesh, and so on
             // const bodyObject = {};
             // for(const [key,val] of params.entries()){
             //     bodyObject[key]=val;

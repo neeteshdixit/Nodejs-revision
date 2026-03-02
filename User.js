@@ -32,7 +32,7 @@ const server = http.createServer((req,res)=>{
     res.write('<body><h1>Read</h1></body>')
     res.write('</html>')
     res.end();
-    // process.exit();
+    // process.exit(); stopping the server after one request.
     }
 });
 
